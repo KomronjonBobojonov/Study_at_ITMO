@@ -1,8 +1,9 @@
+cd ..
 mkdir lab0
-cd lab123/
-mkdir dradonair0 lickilicky2 minccino8
+cd lab0/
+mkdir dragonair0 lickilicky2 minccino8
 touch baltoy4 klinklang8 shedinjal
-cd dradonair0/
+cd dragonair0/
 mkdir sewaddle infernape ivysaur
 touch gigalith frillish herdier 
 cd ..

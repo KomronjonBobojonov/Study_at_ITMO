@@ -28,4 +28,4 @@ df                                     Показывает разделы на 
 rwx-ReadWriteExecution-r=4 w=2 x=1 ==7 Права доступа
 chmod ugo+rwx CMD.txt                  Полный доступ к файлу CMD.txt u-users, g-group, o-others.
 chmod -R og-rwx *                      Убераю права доступа со всех деректорий.
-	
+vim file                               Открывает файл и редактрует	
