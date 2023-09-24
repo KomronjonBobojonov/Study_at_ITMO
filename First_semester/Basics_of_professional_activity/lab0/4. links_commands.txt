@@ -1,0 +1,14 @@
+cd ..
+cd lab0
+ln -s shedinja1 dragonair0/frillishshedinja
+ln shedinja1 dragonair0/frillishshedinja
+ln -s minccino8 Copy_33
+chmod u+rwx dragonair0/gigalith
+cat dragonair0/gigalith dragonair0/gigalith > baltoy4_84
+cat baltoy4 > minccino8/altariabaltoy
+chmod u+rwx lickilicky2
+chmod u+rwx lickilicky2/gligar
+chmod u+rwx lickilicky2/kakuna
+chmod u+rwx lickilicky2/oddish
+cp -a lickilicky2 lickilicky2/gligar
+cat klinklang8 > lickilicky2/gligar

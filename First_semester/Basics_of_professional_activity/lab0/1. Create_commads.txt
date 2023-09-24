@@ -2,7 +2,7 @@ cd ..
 mkdir lab0
 cd lab0/
 mkdir dragonair0 lickilicky2 minccino8
-touch baltoy4 klinklang8 shedinjal
+touch baltoy4 klinklang8 shedinja1
 cd dragonair0/
 mkdir sewaddle infernape ivysaur
 touch gigalith frillish herdier 
@@ -11,5 +11,5 @@ cd lickilicky2/
 mkdir gligar kakuna tangela oddish hippopotas
 cd ..
 cd minccino8/
-mkdir quaqsire
+mkdir quagsire
 touch golett chandelure altaria
