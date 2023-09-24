@@ -1,0 +1,31 @@
+ssh -p 2222 s408281@helios.se.ifmo.ru
+java -jar lab1_code.jar                Запуск jar файла в Helios
+ls                                     Показать действующие катологи.
+ls -l                                  Информация о катологах.
+ls -a                                  Показать все калотоги, а также скрытых.
+ls -a -l                               Комбинация ключей. 
+pwd                                    Отображает в каком катологе мы находимся.
+> file.txt                             Создание файла.
+> folder/file2.txt                     Создание файла, не находясь в папке folder
+rm file2.txt                           Удаление файла.
+echo Hello World! > file.txt           Пишем текст внутри файла через консоль.
+cat file.txt 						   Вывод текста из файла в консоль.
+file file.txt                          Характеристики файла
+cp file.txt fileCopy.txt               Дублирует файл file.txt с названием fileCopy.txt
+rmdir Myfolder                         Удаляет папку.
+rm -rf folder                          Удаляет папку даже если в ней имеются файлы
+mkdir folder                           Создание папки.
+find file.txt folder/                  Поиск файла file.txt в каталоге folder
+find file.txt                          Поиск в деректории
+ls -l > file.txt                       Перезаписывает данные ls -l в file.txt
+sh cmd.txt                             Выполнение команд в терминале, через заранее записанные команды в cmd.txt
+ps                                     Выводит список процессов (в windows это tasklist)
+kill -9 PID                            Убивает процесс в tasklist
+mv cmd.txt CMD.txt                     Переименовывает название файла из cmd.txt в CMD.txt
+echo "Hellllo" >> file.txt             Записывает в продолжении ныне существующего текста.
+cmp CMD.txt file.txt                   Сравнение CMD.txt и file.txt
+df                                     Показывает разделы на жёском диске
+rwx-ReadWriteExecution-r=4 w=2 x=1 ==7 Права доступа
+chmod ugo+rwx CMD.txt                  Полный доступ к файлу CMD.txt u-users, g-group, o-others.
+chmod -R og-rwx *                      Убераю права доступа со всех деректорий.
+	

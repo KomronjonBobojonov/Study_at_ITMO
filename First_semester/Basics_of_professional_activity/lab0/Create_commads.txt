@@ -1,0 +1,14 @@
+mkdir lab0
+cd lab123/
+mkdir dradonair0 lickilicky2 minccino8
+touch baltoy4 klinklang8 shedinjal
+cd dradonair0/
+mkdir sewaddle infernape ivysaur
+touch gigalith frillish herdier 
+cd ..
+cd lickilicky2/
+mkdir gligar kakuna tangela oddish hippopotas
+cd ..
+cd minccino8/
+mkdir quaqsire
+touch golett chandelure altaria
