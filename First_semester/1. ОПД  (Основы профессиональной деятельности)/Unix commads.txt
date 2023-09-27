@@ -32,6 +32,9 @@ vim file                               Открывает файл и редак
 ln -s one three                        Создаю символическую ссылку one с названием three
 ln one three                           Создаю жёсткую ссылку one на three
 cat klin > licky2/gligar               Копирует содержимое klin в gligar
+head -5 file1                          Для просмотра первых пяти строк файла file1
+tail -20 file2                         Для просмотра указанного числа строк с конца файла file2
+
 
 Чтобы сохранить все атрибуты оригинального файла, включая его время модификации, имя владельца, группу и права доступа, используйте ключ `-p' (``preserve'')(сохранить).
 $ cp -p my-copy neighbor-copy [Enter]
@@ -44,3 +47,10 @@ $ cp -R public_html private_html [Enter]
 Чтобы сделать резервную копию дерева каталогов `public_html' в каталог `private_html', введите:
 
 $ cp -a public_html private_html [Enter]
+
+
+
+wc -l файл <CR> (число строк)
+wc -w файл <CR> (число слов)
+wc -c файл <CR> (число символов)
+

@@ -1,0 +1,11 @@
+//wc -m $(ls -dp1 **/*e |  grep -v "/$") | sort -nrk1 | tail -n +2
+ls -R lab0 | grep '^i' | sort -n -k2
+ls -R lab0 | grep '^i' | xargs -I {} sh -c 'echo -n "{}: "; cat {} | wc -c' | sort -n -k2 | sed 's/: //' | head
+ls -R lab0 | grep '^i' | wc -c | sort -n -k2 | sed 's/: //' | head
+ wc -m $(ls -R | grep ^f)
+
+ 
+
+ls -R | wc -c $(grep ^i) | sort
+ls -Rl lab0 | grep -rnw lab0 -e 'wd' | sort  - доделать
+cd lab0/dragonair0
