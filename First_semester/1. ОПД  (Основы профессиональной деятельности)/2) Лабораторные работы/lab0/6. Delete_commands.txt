@@ -9,4 +9,3 @@ chmod u+rwx minccino8
 rm -rf minccino8
 rm -rf dragonair0/sewaddle
 chmod ug=wx,o=rx dragonair0
-chmod uo=rwx,g=wx minccino8
