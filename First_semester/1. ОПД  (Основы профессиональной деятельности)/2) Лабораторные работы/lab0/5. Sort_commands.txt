@@ -1,6 +1,6 @@
-ls -R | wc -c $(grep ^i) | sort   --
-ls -Rl lab0 | grep -rnw lab0 -e 'ga' | sort 
-cd lab0/dragonair0 $ cat -n $ grep -v 'd\>' *  --
-ls -Rl lab0 | grep -v 'e\>' | sort -r
-ls -Rl lab0 | grep 'ga' | sort -r | head -4
-cat -n lab0/dragonair0/herdier lab0/minccino8/golett lab0/minccino8/chandelure | grep -w 'd\>'
+wc -m echo i* */i* */*/i* */*/*/i* | sort -k 1
+ls -laR | grep '^-' | grep 'ga' | sort -k 9 2>/tmp/lab0errors
+ls dragonair0/ | cat -n * 2>/dev/null | grep -v "d$"
+ls -Rltuc | grep "^-" | grep "e$" | sort -r -k 8
+ls -Rltuc | grep "^-" | grep "ga" | sort -r -k 8 | tail -n 4
+cat dragonair0/herdier minccino8/golett minccino8/chandelure | cat -n | grep "h $"

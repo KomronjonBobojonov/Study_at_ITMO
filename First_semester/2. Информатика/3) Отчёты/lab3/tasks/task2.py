@@ -1,10 +1,9 @@
 import re
 
 def solve(string):
-    """ 408281 % 6 = 5 =>
-    Довольно распространённая ошибка ошибка – это повтор слова. Вот в предыдущем
-    предложении такая допущена. Необходимо исправить каждый такой повтор.
-    Повтор это – слово, один или несколько пробельных символов, и снова то же слово.
-    """
-    pattern = r'\b(\w+)\s+\1\b'
-    return re.sub(pattern, '\\1', string)
+	pattern = r'\b\w*[аеёиоуыэюя][аеёиоуыэюя]\w*\b'
+	matches = re.findall(pattern, string)
+	pattern2 = r'\b\w*[бвгджзйклмнпрстфхцчшщ]{1,3}\w*\b'
+	filtered_matches = [word for word in matches if not re.search(pattern2, word)]
+	
+	return filtered_matches
