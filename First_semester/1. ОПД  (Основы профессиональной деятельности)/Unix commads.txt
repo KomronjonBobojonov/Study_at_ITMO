@@ -54,3 +54,21 @@ wc -l файл <CR> (число строк)
 wc -w файл <CR> (число слов)
 wc -c файл <CR> (число символов)
 
+
+
+Как перекинуть с ноута в helios? 
+scp -p 2222 lab1\src\Main.java s408281@helios.se.ifmo.ru:/home/studs/s408281/progaLab2
+
+Как сделать jar? 
+javac -d . Main.java                  -      (Сначало делаем class из main.java)
+jar cvf Lab1.jar Main.class           -      (Из Main.class делаем Lab1.jar)
+java -jar Main.jar                    -      (Запускает jar архив)
+
+javac -d build -cp "src:lib/Pokemon.jar" src/Main.java
+jar cfm ProgaLab2.jar mf Main.class moves pokemons
+
+Создание Манифеста
+Manifest-Version: 1.0
+Main-Class: Main
+Class-Path: lib/Pokemon.jar
+

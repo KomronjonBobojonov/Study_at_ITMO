@@ -5,9 +5,9 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.Type;
 
-public class AerialAce extends PhysicalMove {
-    public AerialAce(){
-        super(Type.FLYING,60,100);
+public class Megahorn extends PhysicalMove {
+    public Megahorn(){
+        super(Type.BUG,120,85);
     }
     @Override
     protected void applyOppDamage(Pokemon pokemon, double damage){
