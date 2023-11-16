@@ -13,4 +13,8 @@ public class NightSlash extends PhysicalMove {
         Status effectedPokemon = pokemon.getCondition();
     }
 
+    @Override
+    protected String describe() {
+        return "use Night Splash";
+    }
 }

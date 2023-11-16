@@ -12,4 +12,9 @@ public class DazzlingGleam extends SpecialMove {
     public void applyOppEffects(Pokemon pokemon) {
         pokemon.setMod(Stat.SPECIAL_ATTACK, 80);
     }
+
+    @Override
+    protected String describe() {
+        return "use Dazzling Gleam";
+    }
 }

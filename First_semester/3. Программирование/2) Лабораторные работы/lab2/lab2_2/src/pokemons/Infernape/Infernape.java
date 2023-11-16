@@ -3,10 +3,11 @@ package pokemons.Infernape;
 import moves.physical.AerialAce;
 import moves.status.DoubleTeam;
 import moves.status.SlackOff;
+import pokemons.Monferno.Monferno;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Infernape extends Pokemon {
+public class Infernape extends Monferno {
     public Infernape(String name, int level){
         super(name, level);
 
@@ -14,6 +15,6 @@ public class Infernape extends Pokemon {
 
         super.setStats(76, 104, 71, 104,71,108);
 
-        super.setMove(new AerialAce(), new DoubleTeam(), new SlackOff(), new AerialAce());
+        super.addMove(new AerialAce());
     }
 }

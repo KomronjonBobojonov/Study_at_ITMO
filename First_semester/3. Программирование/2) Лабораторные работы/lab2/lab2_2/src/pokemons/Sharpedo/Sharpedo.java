@@ -4,10 +4,11 @@ import moves.physical.NightSlash;
 import moves.status.Confide;
 import moves.status.DoubleTeam;
 import moves.status.ScaryFace;
+import pokemons.carvanha.Carvanha;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Sharpedo extends Pokemon {
+public class Sharpedo extends Carvanha {
     public Sharpedo(String name, int level){
         super(name, level);
 
@@ -15,6 +16,6 @@ public class Sharpedo extends Pokemon {
 
         super.setStats(70, 120, 40, 95,40,95);
 
-        super.setMove(new DoubleTeam(), new Confide(), new ScaryFace(), new NightSlash());
+        super.addMove(new NightSlash());
     }
 }

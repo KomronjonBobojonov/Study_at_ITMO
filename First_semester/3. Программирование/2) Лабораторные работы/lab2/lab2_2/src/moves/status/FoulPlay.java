@@ -7,4 +7,13 @@ public class FoulPlay extends StatusMove {
         super(Type.NORMAL, 0, 0);
     }
 
+    @Override
+    protected void applyOppEffects(Pokemon pokemon) {
+        pokemon.setMod(Stat.SPECIAL_ATTACK, -4);
+    }
+
+    @Override
+    protected String describe() {
+        return "use Foul Play";
+    }
 }

@@ -11,13 +11,16 @@ public class Main {
     public static void main(String[] args) {
         Battle battle = new Battle();
 
-        battle.addAlly(new Klefki("Klefki", 8));
-        battle.addAlly(new Carvanha("Carvanha", 4));
-        battle.addAlly(new Sharpedo("Sharpedo", 9));
+        Sharpedo Sharp = new Sharpedo("Sharp");
 
-        battle.addFoe(new Chimchar("Chimchar", 3));
-        battle.addFoe(new Monferno("Monferno", 7));
-        battle.addFoe(new Infernape("Infernape", 14));
+
+        battle.addAlly(new Klefki("11111", 8));
+        battle.addAlly(new Carvanha("11111", 4));
+        battle.addAlly(new Sharpedo("11111", 9));
+
+        battle.addFoe(new Chimchar("22222", 3));
+        battle.addFoe(new Monferno("22222", 7));
+        battle.addFoe(new Infernape("22222", 14));
 
         battle.go();
     }

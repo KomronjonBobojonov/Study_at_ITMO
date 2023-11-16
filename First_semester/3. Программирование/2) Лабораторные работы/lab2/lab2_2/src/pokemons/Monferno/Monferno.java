@@ -3,10 +3,11 @@ package pokemons.Monferno;
 import moves.physical.AerialAce;
 import moves.status.DoubleTeam;
 import moves.status.SlackOff;
+import pokemons.Chimchar.Chimchar;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Monferno extends Pokemon{
+public class Monferno extends Chimchar {
     public Monferno(String name, int level){
         super(name, level);
 
@@ -14,6 +15,6 @@ public class Monferno extends Pokemon{
 
         super.setStats(64, 78, 52, 78,52,81);
 
-        super.setMove(new AerialAce(), new DoubleTeam(), new SlackOff());
+        super.addMove(new SlackOff());
     }
 }

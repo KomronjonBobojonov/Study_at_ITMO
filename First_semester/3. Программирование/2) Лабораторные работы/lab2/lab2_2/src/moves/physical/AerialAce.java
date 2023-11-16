@@ -13,4 +13,9 @@ public class AerialAce extends PhysicalMove {
     protected void applyOppDamage(Pokemon pokemon, double damage){
         pokemon.setMod(Stat.HP, (int) Math.round(damage));
     }
+
+    @Override
+    protected String describe() {
+        return "use Aerial Ace";
+    }
 }

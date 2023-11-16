@@ -15,4 +15,9 @@ public class PlayRough extends PhysicalMove {
     protected void applyOppEffects(Pokemon pokemon) {
         pokemon.setMod(Stat.SPECIAL_ATTACK, -6);
     }
+
+    @Override
+    protected String describe() {
+        return "use Play Rough";
+    }
 }

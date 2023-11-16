@@ -21,4 +21,9 @@ public class DoubleTeam extends StatusMove {
         pokemon.setMod(Stat.ACCURACY, +6);
         pokemon.setMod(Stat.EVASION, +6);
     }
+
+    @Override
+    protected String describe() {
+        return "use Double Team";
+    }
 }

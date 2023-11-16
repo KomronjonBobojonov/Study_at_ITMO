@@ -1,9 +1,12 @@
+#408281 % 6 = 5
+
 import re
 
-def solve(string):
-	pattern = r'\b\w*[аеёиоуыэюя][аеёиоуыэюя]\w*\b'
-	matches = re.findall(pattern, string)
-	pattern2 = r'\b\w*[бвгджзйклмнпрстфхцчшщ]{1,3}\w*\b'
-	filtered_matches = [word for word in matches if not re.search(pattern2, word)]
-	
-	return filtered_matches
+test1 = "пппп аа ппп, ее-п прс, еее-п прсмткеркркер, п-ее прс, п-еее укшонушкоуонвапр, уу нртгнртгнр, у пст" 
+v = [test1]
+for j in v:
+    a = re.split(' ', j)
+    for i in range (len(a)-1):
+        if (re.search(r'[ёеыаояиюуэЁУЕЫАОЭЯИЮ][ёеыаояиюуэЁУЕЫАОЭЯИЮ]', a[i])) and (len(re.findall(r"[йцкнгшщзхфвпрлджчсмтбЙЦКНГШЩЗХФВППРЛДЖЧСМТБ]", a[i + 1])) <= 3):
+                print(a[i])
+
