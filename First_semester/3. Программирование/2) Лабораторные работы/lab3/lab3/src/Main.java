@@ -1,17 +1,41 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+package org.example;
+
+import org.example.enums.Place;
+import org.example.models.charackter.Misa;
+import org.example.models.charackter.Snork;
+import org.example.models.charackter.UnknownWoman;
+import org.example.models.scene.Scene;
+import org.example.models.scene.Sentence;
+import org.example.models.scene.Story;
+
+/**
+ * Она взяла карманный фонарик и вышла в коридор.
+ * Там никого не было.
+ * Но Миса не отвечала.
+ * Фрекен Снорк увидела узкую полоску света, пробивающуюся сквозь полуоткрытую дверь, и на цыпочках вошла туда.
+ * Там сидела Миса, и лоси у нее на голове были совсем другие.
+ */
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        var story = new Story();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        var scene = new Scene();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        scene.addCharacter(new UnknownWoman());
+        scene.addCharacter(new Misa());
+        scene.addCharacter(new Snork());
+
+        UnknownWoman unknownWoman = ((UnknownWoman) scene.getCharacter(UnknownWoman.stcName));
+        Misa misa = ((Misa) scene.getCharacter(Misa.stcName));
+        Snork snork = ((Snork) scene.getCharacter(Snork.stcName));
+
+        story.addSentence(new Sentence(unknownWoman.action.perform()).and(unknownWoman.move.moveTo(Place.CORRIDOR)));
+        story.addSentence(new Sentence(unknownWoman.observeCorridorAction.observe()));
+        story.addSentence(new Sentence(misa.respond.perform()));
+        story.addSentence(new Sentence(snork.notice.observe()).comma(snork.comeCloser.perform()).and(snork.getIntoSilently.perform()));
+        story.addSentence(new Sentence(snork.observeCharacter.observe()).and(snork.describeHead.perform()));
+
+        scene.setStory(story);
+        scene.play();
     }
 }
