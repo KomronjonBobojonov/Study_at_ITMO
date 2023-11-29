@@ -1,4 +1,4 @@
-with open("4.py", "r", encoding="utf-8") as c4:
+with open("main.py", "r", encoding="utf-8") as c4:
 	code_c4 = c4.read()
 
 with open("lib.py", "r", encoding="utf-8") as lib:

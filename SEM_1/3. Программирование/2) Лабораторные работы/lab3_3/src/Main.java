@@ -36,6 +36,7 @@ public class Main {
 
 //        scene.setStory(story);
 //        scene.play();
-        System.out.println(408281%36);
+
+
     }
 }

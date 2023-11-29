@@ -13,7 +13,7 @@ public class Seems implements Action {
     }
 
     @Override
-    public String   perform() {
+    public String perform() {
         return size.getName() + " кажится " + characterName;
     }
 }

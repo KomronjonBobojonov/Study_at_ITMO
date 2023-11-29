@@ -10,5 +10,6 @@ if task == '1':
 elif task == '3':
     print(task3.solve(input("Enter your string to find words with one vowel letter: ")))
 else:
-    print("Can't resolve task number")
+    print("Can't resolve task number")  
+    
     

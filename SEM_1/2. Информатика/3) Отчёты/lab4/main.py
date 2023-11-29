@@ -1,3 +1,5 @@
+#408281 % 36 = 5
+
 from time import *
 
 tm = time()
@@ -71,7 +73,8 @@ with open("input.xml", "r", encoding="utf-8") as file:
 
 		not_first += 1
 
-with open("4.yaml", "w", encoding="utf-8") as o:
+with open("main.yaml", "w", encoding="utf-8") as o:
 	o.write(yml[1:])
 
+sleep(25)
 print("Время работы реализации =", time() - tm, "мс")
