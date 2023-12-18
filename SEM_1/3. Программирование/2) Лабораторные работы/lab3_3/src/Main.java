@@ -13,7 +13,7 @@ public class Main {
      * Тигра тем временем весело прыгал впереди, поминутно возвращаясь, чтобы спросить: "Сюда идти?"
      * И вот наконец показался домик Кенги, и там был Кристофер Робин.
      * Тигра бросился со всех ног к нему.
-    */
+     */
 
     public static void main(String[] args) {
         var story = new Story();
@@ -34,9 +34,8 @@ public class Main {
         story.addSentence(new Sentence("").and(kengi.appearedhouse.perform()).comma("").but(cristoferRobin.was.perform()));
         story.addSentence(new Sentence(tigra.rushed.perform()).with(tigra.allfoot.observe()));
 
-//        scene.setStory(story);
-//        scene.play();
-
+        scene.setStory(story);
+        scene.play();
 
     }
 }

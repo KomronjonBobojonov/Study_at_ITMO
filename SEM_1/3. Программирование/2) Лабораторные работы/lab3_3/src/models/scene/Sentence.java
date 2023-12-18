@@ -60,6 +60,7 @@ public class Sentence {
         return Objects.hash(content);
     }
 
+
     @Override
     public String toString() {
         return "Sentence{" +

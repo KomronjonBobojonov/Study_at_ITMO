@@ -1,14 +1,17 @@
 timetable: 
 	lesson: 
-		time: "\n\t\t\t13:30-15:00\n\t\t"
-subject_type: ЛАБ
-teacher: Рыбаков \Степан\ Дмитриевич
-lesson_type: Очно - дистанционный
-lesson: 
-time: 15:20-16:50
-audience: АУД. 2117
-address: К ронв: еркский пр., д.49, лит.А
-subject: ИНФОРМАТИКА
-subject_type: ЛАБ
-teacher: Рыбаков Степан Дмитриевич
-lesson_type: Очно - дистанционный
+		time: 13:30-15:00
+		audience: "\n\n\t\t\tАУД. 2117\n\n\n\t\t"
+		address: "\t\t\n\t\t\tКронвер/кский пр., д.49, лит.А"
+		subject: ИНФОРМАТИКА
+		subject_type: ЛАБ
+		teacher: Рыбаков \Степан\ Дмитриевич
+		lesson_type: Очно - дистанционный
+	lesson: 
+		time: 15:20-16:50
+		audience: АУД. 2117
+		address: К ронв: еркский пр., д.49, лит.А
+		subject: ИНФОРМАТИКА
+		subject_type: ЛАБ
+		teacher: Рыбаков Степан Дмитриевич
+		lesson_type: Очно - дистанционный

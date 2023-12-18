@@ -1,5 +1,7 @@
 package models.charackter;
 
+import enums.EveryTime;
+import enums.MeanTime;
 import enums.Sizes;
 import interfaces.Action;
 import interfaces.Observer;
@@ -11,8 +13,8 @@ public class Tigra extends AbsCharacter{
     public Tigra() {
         super("Тигра");
     }
-    public Observer happyjump = new HappyJumpAction(stcName);
-    public Action comeback = new ComeBack();
+    public Observer happyjump = new HappyJumpAction(stcName, MeanTime.TimeT);
+    public Action comeback = new ComeBack(EveryTime.Time);
     public Action asking = new Ask();
     public Action herego = new Wherego();
 

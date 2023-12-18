@@ -11,5 +11,5 @@ public class Us extends AbsCharacter{
         super("нам!");
     }
 
-    public Action action = new Seems(stcName, Sizes.SMALL);
+    public Action action = new Seems(stcName, Sizes.BIG);
 }
