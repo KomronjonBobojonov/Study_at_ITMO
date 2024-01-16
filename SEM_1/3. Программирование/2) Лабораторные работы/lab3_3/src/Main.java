@@ -1,3 +1,5 @@
+import enums.Circumstsnces;
+import enums.Pronouns;
 import models.charackter.CristoferRobin;
 import models.charackter.Kengi;
 import models.charackter.Tigra;
@@ -14,7 +16,6 @@ public class Main {
      * И вот наконец показался домик Кенги, и там был Кристофер Робин.
      * Тигра бросился со всех ног к нему.
      */
-
     public static void main(String[] args) {
         var story = new Story();
         var scene = new Scene();
@@ -32,7 +33,7 @@ public class Main {
         story.addSentence(new Sentence(us.action.perform()));
         story.addSentence(new Sentence(tigra.happyjump.observe()).comma(tigra.comeback.perform()).because(tigra.asking.perform()).doubledot(tigra.herego.perform()));
         story.addSentence(new Sentence("").and(kengi.appearedhouse.perform()).comma("").but(cristoferRobin.was.perform()));
-        story.addSentence(new Sentence(tigra.rushed.perform()).with(tigra.allfoot.observe()));
+        story.addSentence(new Sentence(tigra.rushed(Circumstsnces.AllFootsToHim, Pronouns.Her)));
 
         scene.setStory(story);
         scene.play();
