@@ -17,31 +17,31 @@ public class Sentence {
         System.out.println(content + punctuationMark);
     }
 
-    public Sentence and(String text) {
+    public Sentence that(String text) {
         return new Sentence(content + "И вот" + text);
     }
 
     public Sentence but(String text) {
         return new Sentence(content + "и там " + text);
     }
-    public Sentence them(String text) {
-        return new Sentence(content + " тем " + text);
+    public Sentence gap(String text) {
+        return new Sentence(content + " " + text);
     }
 
-    public Sentence whome(String text) {
-        return new Sentence(content + " к " + text);
+    public Sentence dot(String text) {
+        return new Sentence(content + "." + text);
     }
 
-    public Sentence with(String text) {
-        return new Sentence(content + " со " + text);
+    public Sentence and(String text) {
+        return new Sentence(content + ",и " + text);
     }
 
     public Sentence comma(String text) {
         return new Sentence(content + ", " + text);
     }
 
-    public Sentence doubledot(String text) {
-        return new Sentence(content + ": " + text);
+    public Sentence exclamatory(String text) {
+        return new Sentence(content + "!" + text);
     }
 
     public Sentence because(String text) {

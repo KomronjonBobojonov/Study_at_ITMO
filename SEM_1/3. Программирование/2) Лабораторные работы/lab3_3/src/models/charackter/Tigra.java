@@ -1,9 +1,6 @@
 package models.charackter;
 
 import enums.*;
-import interfaces.Action;
-import interfaces.Observer;
-import models.actions.*;
 
 public class Tigra extends AbsCharacter {
     public static String stcName = "Тигра";
@@ -11,12 +8,17 @@ public class Tigra extends AbsCharacter {
     public Tigra() {
         super("Тигра");
     }
-    public Observer happyjump = new HappyJumpAction(stcName, MeanTime.TimeT);
-    public Action comeback = new ComeBack(EveryTime.Time, Circumstsnces.Comeing);
-    public Action asking = new Ask();
-    public Action herego = new Wherego();
-    public String rushed(Circumstsnces how, Pronouns pronoun) {
-        return stcName + " brodsilysa " + how.getName() + " k " + pronoun.getName();
+//    public String back(MeanTime meantime,  Condition happy, Verb jump, Direction ahead, MeanTime everyminute, Circumstsnces returning, Verb ask, Things where, Verb go){
+//        return stcName + meantime.getName() + happy.getName() + jump.getName() + ahead.getName() + ", " + everyminute.getName() + returning.getName() + ask.getName() + ": " + where.getName() + go.getName();
+//    }
+    public String back(MeanTime meantime,  Condition happy, Verb jump, Direction ahead, MeanTime everyminute, Circumstsnces returning){
+        return stcName+" "+meantime.getName()+" "+happy.getName()+" "+jump.getName()+" "+ahead.getName()+", "+everyminute.getName()+" "+returning.getName();
+    }
+    public String back2( Verb ask, Things where, Verb go){
+        return  ask.getName()+": "+where.getName()+" "+go.getName()+"?";
+    }
+    public String rushed(Verb rushed, Circumstsnces how, Pronouns pronoun) {
+        return stcName+" "+rushed.getName()+" "+how.getName()+" к "+pronoun.getName();
     }
 }
 

@@ -1,8 +1,6 @@
 package models.charackter;
 
-import interfaces.Action;
-import models.actions.AppearedHouse;
-import models.actions.Was;
+import enums.Circumstsnces;
 
 public class CristoferRobin extends AbsCharacter{
     public static String stcName = "Кристофер Робин";
@@ -11,5 +9,7 @@ public class CristoferRobin extends AbsCharacter{
         super("Кристофер Робин");
     }
 
-    public Action was = new Was(stcName);
+    public String Was(Circumstsnces was){
+        return was.getName()+" "+stcName;
+    }
 }

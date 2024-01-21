@@ -1,7 +1,7 @@
 package enums;
 
 public enum Things {
-    House("домик"), Building("здание");
+    House("домик"), Building("здание"), Here("Сюда");
     private  final String name;
 
     Things(String name) {

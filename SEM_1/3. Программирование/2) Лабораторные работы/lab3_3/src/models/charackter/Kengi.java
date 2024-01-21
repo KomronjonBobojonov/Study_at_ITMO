@@ -1,9 +1,6 @@
 package models.charackter;
 
-import enums.Things;
-import interfaces.Action;
-import interfaces.Observer;
-import models.actions.*;
+import enums.*;
 
 public class Kengi extends AbsCharacter {
     public static String stcName = "Кенги";
@@ -11,7 +8,7 @@ public class Kengi extends AbsCharacter {
     public Kengi() {
         super("Кенги");
     }
-
-    public Action appearedhouse = new AppearedHouse(stcName, Things.House);
-
+    public String seem(MeanTime finaly, Verb show, Things house){
+        return finaly.getName()+" "+show.getName()+" "+house.getName()+" "+stcName;
+    }
 }
