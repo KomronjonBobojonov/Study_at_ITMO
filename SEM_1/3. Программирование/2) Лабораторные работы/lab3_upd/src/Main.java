@@ -16,8 +16,6 @@ import java.util.List;
  Забравшись на верхние полки.
  Незнайка и Козлик с удобством растянулись на них и принялись наблюдать украдкой за прибывающими пассажирами.
  Вагон тем временем понемножку наполнялся.
- Внизу, как раз под полкой, на которой лежал Незнайка, расположился какой-то толстенький коротышка.
- Сунув чемодан под сиденье, он вытащил из кармана целый ворох газет и принялся читать их.
  */
 
 
@@ -29,7 +27,6 @@ public class Main {
         Kozlik kozlik = new Kozlik("Козлик", Gengers.MALE, Locations.OUTSIDE, ShelfInVagons.TOP);
         Vokzal vokzal = new Vokzal("вокзал");
         Provodnik provodnik = new Provodnik("Проводник", Gengers.MALE, Locations.VAGON, ShelfInVagons.BOTTOM);
-//        Person pespo = new Korotishka("Незнайка", Gengers.FEMALE, Locations.OUTSIDE, ShelfInVagons.TOP);
 
 
         vokzal.come(kozlik.location);
