@@ -26,12 +26,13 @@ public class Main {
         Kengi kengi = ((Kengi) scene.getCharacter((Kengi.stcName)));
         CristoferRobin cristoferRobin = ((CristoferRobin) scene.getCharacter(CristoferRobin.stcName));
 
-        story.addSentence(new Sentence(Sizes.BIG.getName()).gap(MeanTime.Seem.getName()).gap(Pronouns.Us.getName()).exclamatory(""));
-        story.addSentence(new Sentence(tigra.back(MeanTime.TimeT, Condition.Happy, Verb.Jump, Direction.Ahead, MeanTime.TimeM, Circumstsnces.Comeing)).because(tigra.back2(Verb.Ask, Things.Here, Verb.Go)));
-        story.addSentence(new Sentence(kengi.seem(MeanTime.Finally, Verb.Appeared, Things.House)).and(cristoferRobin.Was(Circumstsnces.Therewas)));
-        story.addSentence(new Sentence(tigra.rushed(Verb.Rushed,Circumstsnces.AllFootsToHim, Pronouns.Him)).dot(""));
+        story.addSentence(new Sentence(Sizes.BIG.getName()).gap(MeanTime.SEEM.getName()).gap(Pronouns.US.getName()).exclamatory(""));
+        story.addSentence(new Sentence(tigra.jump(MeanTime.TIME_T, Condition.HAPPY, Verb.JUMP, Direction.AHEAD, MeanTime.TIME_M, Circumstsnces.COMEING)).because(tigra.back2(Verb.ASK, Things.HERE, Verb.GO)));
+        story.addSentence(new Sentence(kengi.seem(MeanTime.FINALLY, Verb.APPEARED, Things.HOUSE)).and(cristoferRobin.Was(Circumstsnces.THEREWAS)));
+        story.addSentence(new Sentence(tigra.rushed(Verb.RUSHED,Circumstsnces.ALL_FOOTS_TO_HIM, Pronouns.HIM)).dot(""));
         scene.setStory(story);
         scene.play();
 
     }
 }
+

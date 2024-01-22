@@ -1,7 +1,7 @@
 package enums;
 
 public enum MeanTime {
-    TimeT("тем временем"), TimeM("понинутно"), Seem("кажутся"), Finally("И вот наконец");
+    TIME_T("тем временем"), TIME_M("понинутно"), SEEM("кажутся"), FINALLY("И вот наконец");
 
     private final String name;
 

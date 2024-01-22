@@ -1,7 +1,7 @@
 package enums;
 
 public enum Circumstsnces {
-    Comeing("возвращаясь"), GoOut("уходя"), AllFootsToHim("со всех ног"), Therewas("там был");
+    COMEING("возвращаясь"), GO_OUT("уходя"), ALL_FOOTS_TO_HIM("со всех ног"), THEREWAS("там был");
 
     private final String name;
 

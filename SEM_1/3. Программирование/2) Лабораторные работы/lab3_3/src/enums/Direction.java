@@ -1,7 +1,7 @@
 package enums;
 
 public enum Direction {
-    Ahead("впереди"), Behind("сзади"), Left("слева"), Right("справа");
+    AHEAD("впереди"), BEHIND("сзади"), LEFT("слева"), RIGHT("справа");
     private final String name;
 
     Direction(String name) {

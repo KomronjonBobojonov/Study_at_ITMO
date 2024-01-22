@@ -1,7 +1,7 @@
 package enums;
 
 public enum Pronouns {
-    Her("ней"), Him("нему"), Us("нам");
+    HER("ней"), HIM("нему"), US("нам"), THEM("им");
 
     private final String name;
 

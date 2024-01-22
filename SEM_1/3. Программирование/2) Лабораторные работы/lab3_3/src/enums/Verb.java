@@ -1,7 +1,7 @@
 package enums;
 
 public enum Verb {
-    Jump("прыгал"), Ask("спросить"), Go("идти"), Rushed("бросился"), Appeared("показался");
+    JUMP("прыгал"), ASK("спросить"), GO("идти"), RUSHED("бросился"), APPEARED("показался");
     private  final String name;
 
     Verb(String name) {

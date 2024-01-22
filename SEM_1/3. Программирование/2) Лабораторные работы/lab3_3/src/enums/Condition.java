@@ -1,7 +1,7 @@
 package enums;
 
 public enum Condition {
-    Amazing("восхитительно"), Incomparable("бесподобно"), Happy("весело");
+    AMAZING("восхитительно"), INCOMPARABLE("бесподобно"), HAPPY("весело");
 
     private final String name;
 
