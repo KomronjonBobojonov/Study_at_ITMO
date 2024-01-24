@@ -8,10 +8,11 @@ import interfaces.Enterable;
 import interfaces.Fillable;
 
 import java.util.Collections;
-    import java.util.List;
+import java.util.List;
 
     public class Vagon extends Essence implements Enterable, Climbable, Fillable {
         List<Person> passengers;
+        Room room;
         public Vagon() {
         super("вагон");
         passengers = Collections.emptyList();

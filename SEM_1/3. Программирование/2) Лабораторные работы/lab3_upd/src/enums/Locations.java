@@ -1,5 +1,5 @@
 package enums;
 
 public enum Locations {
-    OUTSIDE, VAGON;
+    OUTSIDE, VAGON, INROOM;
 }

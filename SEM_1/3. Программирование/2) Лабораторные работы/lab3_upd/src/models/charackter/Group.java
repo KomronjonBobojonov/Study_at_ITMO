@@ -6,7 +6,6 @@ import interfaces.LookAfterable;
 import interfaces.Stretchedable;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Group implements Stretchedable, LookAfterable {
     List<Person> particiepents;
@@ -29,11 +28,11 @@ public class Group implements Stretchedable, LookAfterable {
     public void lookafterable(List<Person> passengers) {
         Integer count_of_passengers = 0;
         for(int i = 0; i < passengers.size(); i++){
-            if(Objects.equals(passengers.get(i).getName(),"коротышка") || Objects.equals(passengers.get(i).getName(), "Проводник")){
+            if(passengers.get(i).getName() == "коротышка" || passengers.get(i).getName() == "Проводник"){
                 count_of_passengers++;
             }
         }
-        if(count_of_passengers >= 4){
+        if(count_of_passengers >= 2){
             System.out.println("принялись наблюдать украдкой за прибывающими пассажирами.");
         }else{
             System.out.println("незнали что делать, так как людей в вагоне было мало.");
