@@ -31,8 +31,6 @@ public class Main {
         Vokzal vokzal = new Vokzal("вокзал");
         Room room = new Room("Комната");
         Provodnik provodnik = new Provodnik("Проводник", Gengers.MALE, Locations.VAGON, ShelfInVagons.BOTTOM);
-//        Person pespo = new Korotishka("Незнайка", Gengers.FEMALE, Locations.OUTSIDE, ShelfInVagons.TOP);
-
 
         vokzal.come(kozlik.location);
         vokzal.comminghow(kozlik.getName(), kozlik.location);
