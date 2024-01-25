@@ -4,8 +4,10 @@ import enums.Gengers;
 import enums.Locations;
 import enums.ShelfInVagons;
 import environment.Person;
+import exception.InvalidatedException;
 import interfaces.Checkable;
 import interfaces.Saidable;
+import exception.InvalidatedException;
 
 import java.util.Objects;
 
@@ -20,14 +22,12 @@ public class Provodnik extends Person implements Checkable, Saidable {
     private boolean checker = true;
 
     @Override
-    public void check(String nameOfPerson) {
+    public void check(String nameOfPerson) throws InvalidatedException {
         if (ticket){
             checker = true;
             System.out.print(this.name +" "+ "проверил" + " их " + "билет");
         }else{
-            ticket = false;
-            checker = false;
-            System.out.print(this.name +" "+ "не впустил их, так как у них отсутствует билет");
+            throw new InvalidatedException("Не тот билет");
         }
     }
 

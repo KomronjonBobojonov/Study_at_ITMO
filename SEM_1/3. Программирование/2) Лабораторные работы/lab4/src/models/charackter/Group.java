@@ -4,6 +4,7 @@ import enums.Locations;
 import environment.Person;
 import interfaces.LookAfterable;
 import interfaces.Stretchedable;
+import exception.PassengersNotFoundException;
 
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class Group implements Stretchedable, LookAfterable {
     }
 
     @Override
-    public void lookafterable(List<Person> passengers) {
+    public void lookafterable(List<Person> passengers) throws PassengersNotFoundException{
         Integer count_of_passengers = 0;
         for(int i = 0; i < passengers.size(); i++){
             if(passengers.get(i).getName() == "коротышка" || passengers.get(i).getName() == "Проводник"){
@@ -35,7 +36,8 @@ public class Group implements Stretchedable, LookAfterable {
         if(count_of_passengers >= 2){
             System.out.println("принялись наблюдать украдкой за прибывающими пассажирами.");
         }else{
-            System.out.println("незнали что делать, так как людей в вагоне было мало.");
+
+            throw new PassengersNotFoundException("Что-то пошло не так!");
         }
     }
 }
