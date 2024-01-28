@@ -69,10 +69,10 @@ jar cfm ProgaLab2.jar mf Main.class moves pokemons
 
 Создание Манифеста
 Manifest-Version: 1.0
-Main-Class: Main
-Class-Path: lib/Pokemon.jar
-
+Main-Class:
+Class-Path: 
 
 
 javac -d . Main.java (Создал Main.class)
 jar cfm ProgaLab3.jar mf Main.class enums interfaces models (lab3)
+
