@@ -68,7 +68,7 @@ javac -d build -cp "src:lib/Pokemon.jar" src/Main.java
 jar cfm ProgaLab2.jar mf Main.class moves pokemons
 
 Создание Манифеста
-Manifest-Version: 1.0
+Manifest-Version: 1.000
 Main-Class:
 Class-Path: 
 
