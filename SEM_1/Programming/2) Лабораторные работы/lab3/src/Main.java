@@ -30,6 +30,7 @@ public class Main {
         Kozlik kozlik = new Kozlik("Козлик", Gengers.MALE, Locations.OUTSIDE, ShelfInVagons.TOP);
         Vokzal vokzal = new Vokzal("вокзал");
         Room room = new Room("Комната");
+        korotishka qw = new Kozlik("Kozlik");
         Provodnik provodnik = new Provodnik("Проводник", Gengers.MALE, Locations.VAGON, ShelfInVagons.BOTTOM);
 
         vokzal.come(kozlik.location);

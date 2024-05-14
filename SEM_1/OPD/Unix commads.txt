@@ -57,7 +57,7 @@ wc -c файл <CR> (число символов)
 
 
 Как перекинуть с ноута в helios? 
-scp -p 2222 lab1\src\Main.java s408281@helios.se.ifmo.ru:/home/studs/s408281/progaLab2
+scp -p 2222 lab1\src\Main.java s408281@helios.se.ifmo.ru:/home/studs/s408281/progaLab2/data
 
 Как сделать jar? 	
 javac -d . Main.java                  -      (Сначало делаем class из main.java)
@@ -76,3 +76,27 @@ Class-Path:
 javac -d . Main.java (Создал Main.class)
 jar cfm ProgaLab3.jar mf Main.class enums interfaces models (lab3)
 
+
+https://t.me/+RCnR7H20r1EyYTdi - ПОТОК 3
+https://t.me/+ZiJjXV-7g6BmYTNi
+
+https://course-b7.ru/pl/tasks/resp?filter%5Bobject_type_id%5D=55respld=214551738
+
+aniskhon@list.ru
+
+SELECT EXTRACT(YEAR from timeofrecording) as year, sum(data_volume) from signal GROUP BY year;
+SELECT size, count(*) from asteroid GROUP BY size;
+SELECT COUNT ALL FROM shot_to_observation WHERE camera_id = '5
+select * from asteroid where name LIKE '%a%';
+SELECT EXTRACT(YEAR FROM timeofrecording) AS year, SUM(data_volume) FROM signal GROUP BY year HAVING EXTRACT(YEAR FROM timeofrecording) > 2023;
+
+select id, name from asteroid group by id ORDER BY id
+SELECT * FROM ASTEROID ORDER BY id ASC; 
+ASC - по возрастанию
+DESC - по убыванию
+
+SELECT timeofrecording, sum(data_volume) from signal GROUP BY timeofrecording;
+
+
+java -jar Lab6.server.main.jar /home/studs/s408281/progaLab6/data 
+C:\Users\komro\Desktop\lab6\
