@@ -72,7 +72,6 @@ Manifest-Version: 1.000
 Main-Class:
 Class-Path: 
 
-
 javac -d . Main.java (Создал Main.class)
 jar cfm ProgaLab3.jar mf Main.class enums interfaces models (lab3)
 
@@ -86,9 +85,13 @@ aniskhon@list.ru
 
 SELECT EXTRACT(YEAR from timeofrecording) as year, sum(data_volume) from signal GROUP BY year;
 SELECT size, count(*) from asteroid GROUP BY size;
-SELECT COUNT ALL FROM shot_to_observation WHERE camera_id = '5
+SELECT count(*) FROM shot_to_observation WHERE camera_id = '5';
 select * from asteroid where name LIKE '%a%';
 SELECT EXTRACT(YEAR FROM timeofrecording) AS year, SUM(data_volume) FROM signal GROUP BY year HAVING EXTRACT(YEAR FROM timeofrecording) > 2023;
+SELECT camera_id, count(*) from shot_to_observation2 group by camera_id having count(*) > 1 AND camera_id > 1;
+
+
+SELECT shape, SUM(density) AS density_sum FROM asteroid GROUP BY shape;
 
 select id, name from asteroid group by id ORDER BY id
 SELECT * FROM ASTEROID ORDER BY id ASC; 
@@ -96,7 +99,50 @@ ASC - по возрастанию
 DESC - по убыванию
 
 SELECT timeofrecording, sum(data_volume) from signal GROUP BY timeofrecording;
-
+--
 
 java -jar Lab6.server.main.jar /home/studs/s408281/progaLab6/data 
 C:\Users\komro\Desktop\lab6\
+
+
+
+ALTER:
+ALTER TABLE products ADD COLUMN description text;
+ALTER TABLE products RENAME TO product;
+
+GRANT — определить права доступа
+Эта разновидность команды GRANT даёт одной или нескольким ролям определённые права для доступа к объекту базы данных. Эти права добавляются к списку имеющихся, если роль уже наделена какими-то правами.
+
+REVOKE отзывает ранее выданные разрешения;
+
+HAVING
+
+SELECT
+    customer_id,
+    SUM (amount)
+FROM
+    payment
+GROUP BY
+    customer_id
+HAVING
+    SUM (amount) > 200;
+
+
+ORDER BY
+
+
+
+
+
+Выделение отдельных строк с помощью оператора DISTINCT.
+Сортировка строк при помощи условия ORDER BY.
+Фильтрация строк при помощи условия WHERE.
+Объединение строк в группы при помощи условия GROUP BY.
+Фильтрация групп при помощи условия HAVING.
+Объединение с другими таблицами при помощи объединений, таких как INNER JOIN, LEFT JOIN, FULL OUTER JOIN, CROSS JOIN.
+
+select permission, type, number_of_shots from camera; - вывод двух столбцов из таблицы camera
+INSERT INTO Products VALUES (1, 'Galaxy S9', 'Samsung', 4, 63000);
+
+
+
