@@ -103,6 +103,7 @@ SELECT timeofrecording, sum(data_volume) from signal GROUP BY timeofrecording;
 
 java -jar Lab6.server.main.jar /home/studs/s408281/progaLab6/data 
 C:\Users\komro\Desktop\lab6\
+java -cp Lab6.server.main.jar:/usr/local/share/java/classes/postgresq
 
 
 
@@ -143,6 +144,7 @@ ORDER BY
 
 select permission, type, number_of_shots from camera; - вывод двух столбцов из таблицы camera
 INSERT INTO Products VALUES (1, 'Galaxy S9', 'Samsung', 4, 63000);
+
 
 
 

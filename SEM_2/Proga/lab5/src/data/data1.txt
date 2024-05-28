@@ -1,0 +1,116 @@
+[
+  {
+    "id": 3,
+    "name": "MovieName3",
+    "coordinates": {
+      "x": 10,
+      "y": 20.0
+    },
+    "creationDate": "2024-01-30",
+    "price": 15.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "ACTION",
+    "Person": {
+      "id": 3,
+      "name": "PersonName3",
+      "capacity": 10,
+      "type": "PUB"
+    }
+  },
+  {
+    "id": 5,
+    "name": "MovieExcecuteScript",
+    "coordinates": {
+      "x": 100,
+      "y": 200.0
+    },
+    "creationDate": "2024-02-18",
+    "price": 45.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "FANTASY",
+    "Person": {
+      "id": 1,
+      "name": "PersonNameExcecuteScript",
+      "capacity": 20,
+      "type": "OPEN_AREA"
+    }
+  },
+  {
+    "id": 4,
+    "name": "12312",
+    "coordinates": {
+      "x": 42,
+      "y": 13.0
+    },
+    "creationDate": "2024-02-18",
+    "price": 12.0,
+    "discount": 12,
+    "refundable": true,
+    "type": "ACTION",
+    "Person": {
+      "id": 1,
+      "name": "asd",
+      "capacity": 424,
+      "type": "PUB"
+    }
+  },
+  {
+    "id": 7,
+    "name": "MovieExcecuteScript",
+    "coordinates": {
+      "x": 100,
+      "y": 200.0
+    },
+    "creationDate": "2024-02-19",
+    "price": 45.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "FANTASY",
+    "Person": {
+      "id": 1,
+      "name": "PersonNameExcecuteScript",
+      "capacity": 20,
+      "type": "OPEN_AREA"
+    }
+  },
+  {
+    "id": 6,
+    "name": "MovieExcecuteScript",
+    "coordinates": {
+      "x": 100,
+      "y": 200.0
+    },
+    "creationDate": "2024-02-19",
+    "price": 45.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "FANTASY",
+    "Person": {
+      "id": 1,
+      "name": "PersonNameExcecuteScript",
+      "capacity": 20,
+      "type": "OPEN_AREA"
+    }
+  },
+  {
+    "id": 8,
+    "name": "komon",
+    "coordinates": {
+      "x": 13,
+      "y": 132.0
+    },
+    "creationDate": "2024-04-15",
+    "price": 21.0,
+    "discount": 20,
+    "refundable": true,
+    "type": "ACTION",
+    "Person": {
+      "id": 1,
+      "name": "wmdw",
+      "capacity": 20,
+      "type": "PUB"
+    }
+  }
+]

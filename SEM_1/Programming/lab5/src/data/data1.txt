@@ -1,0 +1,116 @@
+[
+  {
+    "id": 2,
+    "name": "TicketName2",
+    "coordinates": {
+      "x": 10,
+      "y": 20.0
+    },
+    "creationDate": "2024-01-30",
+    "price": 10.0,
+    "discount": 20,
+    "refundable": true,
+    "type": "VIP",
+    "venue": {
+      "id": 2,
+      "name": "VenueName2",
+      "capacity": 10,
+      "type": "PUB"
+    }
+  },
+  {
+    "id": 3,
+    "name": "TicketName3",
+    "coordinates": {
+      "x": 10,
+      "y": 20.0
+    },
+    "creationDate": "2024-01-30",
+    "price": 15.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "VIP",
+    "venue": {
+      "id": 3,
+      "name": "VenueName3",
+      "capacity": 10,
+      "type": "PUB"
+    }
+  },
+  {
+    "id": 4,
+    "name": "12312",
+    "coordinates": {
+      "x": 42,
+      "y": 13.0
+    },
+    "creationDate": "2024-02-18",
+    "price": 12.0,
+    "discount": 12,
+    "refundable": true,
+    "type": "VIP",
+    "venue": {
+      "id": 1,
+      "name": "asd",
+      "capacity": 424,
+      "type": "PUB"
+    }
+  },
+  {
+    "id": 5,
+    "name": "TicketExcecuteScript",
+    "coordinates": {
+      "x": 100,
+      "y": 200.0
+    },
+    "creationDate": "2024-02-18",
+    "price": 45.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "CHEAP",
+    "venue": {
+      "id": 1,
+      "name": "VenueNameExcecuteScript",
+      "capacity": 20,
+      "type": "OPEN_AREA"
+    }
+  },
+  {
+    "id": 6,
+    "name": "TicketExcecuteScript",
+    "coordinates": {
+      "x": 100,
+      "y": 200.0
+    },
+    "creationDate": "2024-02-19",
+    "price": 45.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "CHEAP",
+    "venue": {
+      "id": 1,
+      "name": "VenueNameExcecuteScript",
+      "capacity": 20,
+      "type": "OPEN_AREA"
+    }
+  },
+  {
+    "id": 7,
+    "name": "TicketExcecuteScript",
+    "coordinates": {
+      "x": 100,
+      "y": 200.0
+    },
+    "creationDate": "2024-02-19",
+    "price": 45.0,
+    "discount": 10,
+    "refundable": true,
+    "type": "CHEAP",
+    "venue": {
+      "id": 1,
+      "name": "VenueNameExcecuteScript",
+      "capacity": 20,
+      "type": "OPEN_AREA"
+    }
+  }
+]
