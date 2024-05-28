@@ -1,0 +1,15 @@
+cd ..
+cd lab0
+echo 'satk=4 sdef=7 spd=6' > baltoy4
+echo -e "Способности Leech Life\nSand-Attack Fury Swipes Mind Reader Spite Confuse Ray Shadow Sneak
+\nGrudge Heal Block Shadow Ball" > shedinja1
+echo -e "Способности Charge Thundershock Gear Grind\nBind Charge Beam Autotomize Mirror Shot Screech Discharge Metal Sound \nShift Gear Lock-On Zap Cannon Hyper Beam" > klinklang8
+cd dragonair0
+echo -e "satk=6 sdef=7 \nspd=3" > gigalith
+echo -e "weight=72.8 height=47.0 atk=4 def=5" > frillish
+echo -e "satk=4 \nsdef=7 spd=6" > herdier
+cd ..
+cd minccino8
+echo -e "Ходы Astonish \nDefense Curl Pound Mud-Slap Rollout Shadow Punch Iron Defense Mega" > golett
+echo -e "Развитые способности Shadow \nTag" > chandelure
+echo -e "satk=7 sdef=11 spd=8" > altaria 

@@ -1,2 +1,0 @@
-help
-execute_script /home/studs/s408281/progaLab5/script_to_execute_2.txt

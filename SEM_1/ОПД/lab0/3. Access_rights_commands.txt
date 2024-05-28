@@ -1,0 +1,29 @@
+cd .. 
+cd lab0
+chmod uo=r,g-rwx baltoy4
+chmod ug=wx,o=rx dragonair0
+cd dragonair0
+chmod u=rx,go=x sewaddle
+chmod u=wx,go=x infernape
+chmod u-rwx,g=r,o=rw gigalith
+chmod u-rwx,go=rw frillish
+chmod u=rx,g=w,o=r ivysaur
+chmod u-rwx,go=rw herdier
+cd ..
+chmod ug=rw,o=r klinklang8
+chmod u=wx,g=wx,o=rx lickilicky2
+cd lickilicky2
+chmod u=rx,g=x,o=r gligar
+chmod u=wx,g=rw,o=x kakuna
+chmod u=rx,g=x,o=wx tangela
+chmod u=wx,g=x,o=rwx oddish
+chmod u=rx,go=rwx hippopotas
+cd ..
+chmod uo=rwx,g=wx minccino8
+cd minccino8
+chmod u-rwx,g=rw,o=w golett
+chmod u=rw,g=w,o-rwx chandelure
+chmod u=rx,g=rwx,o=wx quagsire
+chmod u=rw,g=w,o=r altaria
+cd ..
+chmod uo=r,g-rwx shedinja1

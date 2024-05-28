@@ -1,0 +1,11 @@
+cd ..
+cd lab0
+rm -rf baltoy4
+rm -rf minccino8/altaria
+rm Copy_33
+chmod u+rwx dragonair0
+rm -rf dragonair0/frillishshedin*
+chmod u+rwx minccino8
+rm -rf minccino8
+rm -rf dragonair0/sewaddle
+chmod ug=wx,o=rx dragonair0
