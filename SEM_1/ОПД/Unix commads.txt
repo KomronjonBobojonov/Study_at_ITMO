@@ -102,8 +102,21 @@ SELECT timeofrecording, sum(data_volume) from signal GROUP BY timeofrecording;
 --
 
 java -jar Lab6.server.main.jar /home/studs/s408281/progaLab6/data 
-C:\Users\komro\Desktop\lab6\
-java -cp Lab6.server.main.jar:/usr/local/share/java/classes/postgresq
+C:\Users\komro\Desktop\lab6\ 
+
+
+____________________________________________________________________________________________________________
+|                                 |
+|          PROGA  LAB 7           |
+|_________________________________|
+
+java -cp Lab6.server.main.jar:/usr/local/share/java/classes/postgresql.jar org.serverapp.Main /home/studs/s408281/progaLab7/data
+psql -h pg -d studs
+SELECT ownerid, count(*) from ticket GROUP BY ownerid;
+____________________________________________________________________________________________________________
+
+
+
 
 
 
@@ -148,3 +161,12 @@ INSERT INTO Products VALUES (1, 'Galaxy S9', 'Samsung', 4, 63000);
 
 
 
+
+ОПД лаба 
+
+Условного перехода - Jump
+EI - 
+INC - если разрешено прерывание и готов
+W - работа останов F9
+P - если 1 то вверх и reset и разрывается путь от таквого генератора к бвэм
+HALT - HLT

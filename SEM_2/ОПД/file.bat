@@ -1,0 +1,1 @@
+java -jar -Dmode=dual -Dcode=code.txt bcomp-ng.jar
