@@ -1,0 +1,19 @@
+help
+execute_script /Users//IdeaProjects/Lab5.1/src/data/script_to_execute.txt
+add
+
+TicketExcecuteScript
+100
+200
+45
+10
+1
+CHEAP
+VenueNameExcecuteScript
+20
+OPEN_AREA
+info
+show
+_by_id 1
+save
+info

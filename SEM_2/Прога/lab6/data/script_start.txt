@@ -1,0 +1,1 @@
+execute_script /home/studs/s408281/progaLab6/data/script_to_execute.txt
