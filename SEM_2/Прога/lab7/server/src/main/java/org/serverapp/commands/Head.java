@@ -25,7 +25,7 @@ public class Head extends Command {
     @Override
     public Response apply(Request request) {
         try {
-            return new HeadResponse(productRepository.first(), null);
+            return new HeadResponse(productRepository.first(request.login), null);
         } catch (Exception e) {
             return new HeadResponse(null, e.toString());
         }

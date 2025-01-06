@@ -27,7 +27,7 @@ public class Show extends Command {
     @Override
     public Response apply(Request request) {
         try {
-            return new ShowResponse(null, ticketRepository.sorted());
+            return new ShowResponse(null, ticketRepository.sorted(request.login));
         } catch (Exception e) {
             return new ShowResponse(e.toString(), Collections.emptyList());
         }

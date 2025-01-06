@@ -35,6 +35,13 @@ cat klin > licky2/gligar               Копирует содержимое kli
 head -5 file1                          Для просмотра первых пяти строк файла file1
 tail -20 file2                         Для просмотра указанного числа строк с конца файла file2
 
+httpd -f ~/1/httpd-root/conf/httpd.conf -k stop
+
+httpd -f ~/1/httpd-root/conf/httpd.conf -k start
+java -DFCGI_PORT=24534 -jar server.jar
+ssh -p 2222 -L  8080:localhost:24533 s408281@helios.cs.ifmo.ru
+
+scp  -P 2222 server.jar  s408281@se.ifmo.ru://home/studs/s408281/1/httpd-root/fcgi-bin
 
 Чтобы сохранить все атрибуты оригинального файла, включая его время модификации, имя владельца, группу и права доступа, используйте ключ `-p' (``preserve'')(сохранить).
 $ cp -p my-copy neighbor-copy [Enter]
@@ -110,12 +117,13 @@ ________________________________________________________________________________
 |          PROGA  LAB 7           |
 |_________________________________|
 
-java -cp Lab6.server.main.jar:/usr/local/share/java/classes/postgresql.jar org.serverapp.Main /home/studs/s408281/progaLab7/data
+java -cp Lab6.server.main.jar:/usr/local/share/java/classes/postgresql.jar org.serverapp.Main /home/studs/s408281/lab_7/data
 psql -h pg -d studs
 SELECT ownerid, count(*) from ticket GROUP BY ownerid;
 ____________________________________________________________________________________________________________
 
-
+execute_script data/script_add.txt
+execute_script data/add_10k
 
 
 

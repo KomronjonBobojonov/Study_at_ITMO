@@ -57,6 +57,7 @@ public class TicketRepository {
     public void select(String login) {
         lock.lock();
         try {
+            collection.clear();
             var userId = 0;
             userId = getUserIdByLogin(login);
             ResultSet rs = databaseManager.getStatement().executeQuery("SELECT * FROM Ticket WHERE \"ownerid\" = '" + userId + "';");
@@ -152,9 +153,9 @@ public class TicketRepository {
     /**
      * @return Размер коллекции.
      */
-    public int collectionSize() {
-        return collection.size();
-    }
+//    public int collectionSize() {
+//        return collection.size();
+//    }
 
     /**
      * @return Последний элемент коллекции (null если коллекция пустая).
@@ -321,7 +322,6 @@ public class TicketRepository {
      * @return Размер коллекции.
      */
     public int size(String login) {
-        // TODO
         ResultSet rs = null;
         int userId = 0;
         int response = 0;
@@ -338,13 +338,14 @@ public class TicketRepository {
             throw new RuntimeException(e);
         }
 
-        return response; // collection.size();
+        return response; //collection.size();
     }
 
     /**
      * @return Отсортированная коллекция.
      */
-    public List<Ticket> sorted() {
+    public List<Ticket> sorted(String login) {
+        select(login);
         return new ArrayList<>(collection)
                 .stream()
                 .sorted(new TicketComparator())
@@ -497,17 +498,19 @@ public class TicketRepository {
     public void clear(String login) {
         try {
             var userid = getUserIdByLogin(login);
-            ResultSet rs = databaseManager.getStatement().executeQuery("DELETE FROM ticket WHERE \"ownerid\" = '" + userid + "';");
 
+            // Execute deletion query
+            String deleteQuery = "DELETE FROM Ticket WHERE ownerId = '" + userid + "';";
+            databaseManager.getStatement().executeUpdate(deleteQuery);
+
+            // Optionally, re-select or update the collection for the given user
             select(login);
-            /*collection.stream().map(),,*/
-            // collection.clear();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
-
     }
+
 
     public Integer getUserIdByLogin(String login) throws SQLException {
         ResultSet rs = databaseManager.getStatement().executeQuery("SELECT id FROM Users WHERE \"login\" = '" + login + "';");
@@ -520,8 +523,8 @@ public class TicketRepository {
     /**
      * @return Первый элемент коллекции (null если коллекция пустая).
      */
-    public Ticket first() {
+    public Ticket first(String login) {
         if (collection.isEmpty()) return null;
-        return sorted().get(0);
+        return sorted(login).get(0);
     }
 }
