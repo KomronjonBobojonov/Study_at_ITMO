@@ -35,6 +35,7 @@ cat klin > licky2/gligar               Копирует содержимое kli
 head -5 file1                          Для просмотра первых пяти строк файла file1
 tail -20 file2                         Для просмотра указанного числа строк с конца файла file2
 
+WEB LAB 1________________________________
 httpd -f ~/1/httpd-root/conf/httpd.conf -k stop
 
 httpd -f ~/1/httpd-root/conf/httpd.conf -k start
@@ -42,6 +43,30 @@ java -DFCGI_PORT=24534 -jar server.jar
 ssh -p 2222 -L  8080:localhost:24533 s408281@helios.cs.ifmo.ru
 
 scp  -P 2222 server.jar  s408281@se.ifmo.ru://home/studs/s408281/1/httpd-root/fcgi-bin
+WEB LAB 1________________________________
+
+WEB LAB 2________________________________
+ssh -p 2222 s408281@se.ifmo.ru -Y -L35650:localhost:35650
+
+JAVA=java wildfly-30.0.0.Final/bin/standalone.sh
+psql -h pg -d studs -U s373296 -W
+20042005Shahzod
+s373296
+Guwk)9611
+
+ssh -p2222 s373720@helios.se.ifmo.ru
+TLqe$8743
+
+ssh -p2222 s373296@helios.se.ifmo.ru -L30101:localhost:30101   
+WEB LAB 1________________________________
+
+WEB LAB 4_____________________________________
+ssh -p2222 s408281@helios.se.ifmo.ru -L5432:localhost:5432
+psql -h pg -d studs
+
+
+
+WEB LAB 4_____________________________________
 
 Чтобы сохранить все атрибуты оригинального файла, включая его время модификации, имя владельца, группу и права доступа, используйте ключ `-p' (``preserve'')(сохранить).
 $ cp -p my-copy neighbor-copy [Enter]
